@@ -9,8 +9,10 @@ import java.util.Objects;
 안에 있는 것은 this 부모에 있는것 super
  */
 public class Person4 extends Animal {
+    private boolean isAdult;
     public Person4(String name, int age) {
         super(name, age);
+        this.isAdult = age > 19;
     }
     @Override
     public void sound() {
@@ -21,4 +23,12 @@ public class Person4 extends Animal {
         System.out.println("안녕");
     }
 
+    @Override
+    public String toString() {
+        return "{" +
+                "age =" + getAge() +
+                ",name =" + getName() +
+                ",isAdult=" + isAdult +
+                '}';
+    }
 }
