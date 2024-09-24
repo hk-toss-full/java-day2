@@ -1,8 +1,10 @@
+package team;
+
 // 4명 {"이세연", 14}, {"백승일", 22}, {"조예은",3} 까지 존재 가능
 // 팀 명 아메리카노
 // 목표 "착하게 살자"
 // {"이세연", 14}, {"백승일", 22}, {"조예은",3} 있었는데 {"최승혁", 21} 추가
-//Person p =new Person()
+//team.Person p =new team.Person()
 // p.name = "최"
 // p.age = 21
 // team.memberAdd(p)

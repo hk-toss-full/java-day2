@@ -1,14 +1,28 @@
+package team;
+
 import java.util.Objects;
-// const i =0;
-// i = 1
-// let i = 0;
-// i = 2
+
+/*
+public 다 가능
+protected 패키지 다르면 x
+(default) 패키지 다르면 x
+private 나 아니면 x
+ */
 public class Person3 {
-//   할당시가 마지막 final
-    final String name;
-    int age;
+
+    private final String name;
+    private int age;
+    public String getName() {
+        return name;
+    }
+    public int getAge() {
+        return age;
+    }
     public void 해피뉴이어(){
         age++;
+    }
+    public void 미국다녀옴(){
+        age+=3;
     }
     public Person3(String name, int age) {
         this.name = name;
@@ -30,26 +44,10 @@ public class Person3 {
 
     @Override
     public String toString() {
-        return "Person3{" +
+        return "team.Person3{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}';
     }
-    // 이미 있는 것을 바꾸는 것
-//    overriding
-//    @Override
-//    public String toString() {
-//        return "name : " + name + ", age : ";
-//    }
-//
-//
-//    public Person3(String name, int age){
-//        this.name = name;
-//        this.age = age;
-//    }
-
-
-
-// 가장 상위 Object 상속(?)이 된다.
 
 }

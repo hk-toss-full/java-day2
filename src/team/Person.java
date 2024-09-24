@@ -1,6 +1,8 @@
+package team;
+
 public class Person {
     // class 틀
-//    Person 틀 이름
+//    team.Person 틀 이름
     // 안에서 갖는 변수 = 필드
 //    전역 변수
     String name = "우재남";
